@@ -140,7 +140,6 @@ body {
 .order-plan-link:hover {
   text-decoration: none;
   color: #766cf1;
-  /* font-size: 2rem; */
 }
 
 .order-btn {
@@ -169,10 +168,6 @@ body {
 }
 
 .order-cancel {
-  /* display: flex;
-  justify-content: center; */
-
-  /* margin: 0 auto; */
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s;
@@ -202,7 +197,6 @@ body {
         rgba(224, 232, 255, 0.8)
       ),
       url("/images/pattern-background-desktop.svg");
-    /* background-size: 100%; */
     background-repeat: repeat-x;
   }
 
@@ -217,19 +211,15 @@ body {
   .order-plan-box {
     gap: 2.2rem;
     padding: 2.2rem;
+    margin-bottom: 3.2rem;
   }
 
   .order-plan-annual-box {
-    /* justify-self: start; */
     margin-right: auto;
   }
 
   .order-btn {
     padding: 1.6rem 0;
     margin-bottom: 3.2rem;
-  }
-
-  .order-cancel {
-    /* margin-bottom: 1.6rem; */
   }
 }
