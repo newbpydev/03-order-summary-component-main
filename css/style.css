@@ -1,4 +1,4 @@
-/** Style Notes  */ /*
+/*! Style Notes  */ /*
 - FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
@@ -30,7 +30,7 @@
     - Weights: 500, 700, 900
 
 */
-/** General style  */
+/*! General style  */
 * {
   margin: 0;
   padding: 0;
@@ -42,20 +42,130 @@ html {
 }
 
 body {
+  font-size: 1.6rem;
+  color: hsl(224, 23%, 55%);
+  background-color:  hsl(225, 100%, 94%);
+
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+p {
   
+
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-width:max-content;
+}
+
+.card-content {
+  /* padding: 0 2.4rem; */
+  margin: 3.2rem 2.4rem;
+}
+
+/*! Order Card */
+.order-card {
+  width: 32rem;
+  margin: 6.4rem 0;
+  
+  background-color: #fff;
+  border-radius: 1.6rem;
+  overflow: hidden;
 }
 
 
-/** General style  */
-/** General style  */
-/** General style  */
+/*! Order Card Image */
+.order-img {
+  width: 100%;
+  height: auto;
+}
+
+/*! Order Card Text Box */
+.order-text-box {
+  text-align: center;
+}
+
+.order-heading {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.order-description {
+  line-height: 1.5;
+  margin-bottom: 2.4rem;
+}
+
+/*! Order Annual Plan Box */
+.order-plan-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1.2rem;
+  padding: 1.6rem;
+  margin-bottom: 2.4rem;
+
+  font-size: 1.4rem;
+}
+
+.order-plan-img {
+  width: 4.4rem;
+  height: 4.4rem;
+}
+
+.plan-title {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+
+.order-plan-link {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 700;  /*! ??????  */
+}
+
+.order-btn {
+  display:block;
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  padding: 1.2rem 0;
+  border-style: none;
+  border-radius: .8rem;
+  margin-bottom: 2.4rem;
+
+  box-shadow: 0 1.2rem 1.2rem rgba(56, 41, 224, 0.2)
+}
+
+.order-cancel {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+}
 
 
-/** FrontEndMentor style  */
+/*! Order Card Image */
+
+
+
+/*! FrontEndMentor style  */
 .attribution {
   font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+  text-decoration: none;
 }
