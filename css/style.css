@@ -44,6 +44,8 @@ html {
 body {
   font-size: 1.6rem;
   color: hsl(224, 23%, 55%);
+  font-family: "Red Hat Display", sans-serif;
+  min-height: 100vh;
 
   background-image: linear-gradient(
       rgba(224, 232, 255, 0.7),
@@ -52,7 +54,6 @@ body {
     url("/images/pattern-background-mobile.svg");
   background-repeat: repeat-x;
 
-  font-family: "Red Hat Display", sans-serif;
 }
 
 .main-content {
