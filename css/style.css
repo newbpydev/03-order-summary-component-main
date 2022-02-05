@@ -44,14 +44,16 @@ html {
 body {
   font-size: 1.6rem;
   color: hsl(224, 23%, 55%);
-  background-color:  hsl(225, 100%, 94%);
 
-  font-family: 'Red Hat Display', sans-serif;
-}
+  background-image: linear-gradient(
+      rgba(224, 232, 255, 0.7),
+      rgba(224, 232, 255, 0.7)
+    ),
+    url("/images/pattern-background-mobile.svg");
+  background-repeat: repeat-x;
 
-p {
-  
-
+  font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
 }
 
 .main-content {
@@ -60,11 +62,10 @@ p {
   align-items: center;
   justify-content: center;
 
-  min-width:max-content;
+  min-width: max-content;
 }
 
 .card-content {
-  /* padding: 0 2.4rem; */
   margin: 3.2rem 2.4rem;
 }
 
@@ -72,12 +73,13 @@ p {
 .order-card {
   width: 32rem;
   margin: 6.4rem 0;
-  
+
   background-color: #fff;
   border-radius: 1.6rem;
   overflow: hidden;
-}
 
+  box-shadow: 0 2rem 1.8rem rgba(114, 128, 167, 0.2);
+}
 
 /*! Order Card Image */
 .order-img {
@@ -123,6 +125,7 @@ p {
 }
 
 .plan-title {
+  display: block;
   color: hsl(223, 47%, 23%);
   font-weight: 700;
 }
@@ -130,11 +133,19 @@ p {
 .order-plan-link {
   color: hsl(245, 75%, 52%);
   text-decoration: underline;
-  font-weight: 700;  /*! ??????  */
+  font-weight: 700; /*! ??????  */
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.order-plan-link:hover {
+  text-decoration: none;
+  color: #766cf1;
+  /* font-size: 2rem; */
 }
 
 .order-btn {
-  display:block;
+  display: block;
   width: 100%;
   background-color: hsl(245, 75%, 52%);
   color: #fff;
@@ -143,29 +154,83 @@ p {
 
   padding: 1.2rem 0;
   border-style: none;
-  border-radius: .8rem;
+  border-radius: 0.8rem;
   margin-bottom: 2.4rem;
+  cursor: pointer;
 
-  box-shadow: 0 1.2rem 1.2rem rgba(56, 41, 224, 0.2)
+  box-shadow: 0 1.2rem 1.2rem rgba(56, 41, 224, 0.2);
+  transition: all 0.3s;
+}
+.order-btn:hover {
+  background-color: #766cf1;
+}
+
+.btn-box {
+  text-align: center;
 }
 
 .order-cancel {
-  display: block;
-  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+
+  /* margin: 0 auto; */
   font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.order-cancel:hover {
+  color: hsl(223, 47%, 23%);
 }
 
-
 /*! Order Card Image */
-
-
 
 /*! FrontEndMentor style  */
 .attribution {
   font-size: 1.1rem;
   text-align: center;
+  margin-bottom: 2.4rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
   text-decoration: none;
+}
+
+/** Media at 384px */
+@media (min-width: 24em) {
+  body {
+    background-image: linear-gradient(
+        rgba(224, 232, 255, 0.8),
+        rgba(224, 232, 255, 0.8)
+      ),
+      url("/images/pattern-background-desktop.svg");
+    /* background-size: 100%; */
+    background-repeat: repeat-x;
+  }
+
+  .order-card {
+    width: 42rem;
+  }
+
+  .card-content {
+    margin: 4rem 3.6rem 4.8rem 3.6rem;
+  }
+
+  .order-plan-box {
+    gap: 2.2rem;
+    padding: 2.2rem;
+  }
+
+  .order-plan-annual-box {
+    /* justify-self: start; */
+    margin-right: auto;
+  }
+
+  .order-btn {
+    padding: 1.6rem 0;
+    margin-bottom: 3.2rem;
+  }
+
+  .order-cancel {
+    /* margin-bottom: 1.6rem; */
+  }
 }
