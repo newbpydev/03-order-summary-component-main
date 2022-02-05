@@ -32,11 +32,17 @@
 */
 /** General style  */
 * {
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  /* font-si */
+  font-size: 10px;
+}
+
+body {
+  
 }
 
 
@@ -47,7 +53,7 @@ html {
 
 /** FrontEndMentor style  */
 .attribution {
-  font-size: 11px;
+  font-size: 1.1rem;
   text-align: center;
 }
 .attribution a {
