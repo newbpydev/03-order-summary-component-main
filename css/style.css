@@ -53,7 +53,6 @@ body {
   background-repeat: repeat-x;
 
   font-family: "Red Hat Display", sans-serif;
-  height: 100vh;
 }
 
 .main-content {
@@ -195,8 +194,8 @@ body {
   text-decoration: none;
 }
 
-/** Media at 384px */
-@media (min-width: 24em) {
+/** Media at 432px */
+@media (min-width: 27em) {
   body {
     background-image: linear-gradient(
         rgba(224, 232, 255, 0.8),
